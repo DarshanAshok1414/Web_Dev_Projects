@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text: 1rem;
+    --head: 3.5rem;
+}
+
+.first-section{
+    min-height: 100vh;
+  background:linear-gradient(black,transparent)
+ ,url("https://images.unsplash.com/photo-1549298916-b41d501d3772?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+h2{
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 2rem; 
+    color: goldenrod;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    padding: 0rem 1.5rem;
+    background-blend-mode: lighten;
+   /*background-color: rgb(0 0 0 / 50%);*/
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.navbar ul li{
+    display:inline-block;
+    margin-left: 3rem;
+    font-size: var(--text);
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;
+    transition: 250ms linear;
+}
+
+.navbar ul li a:hover{
+    border-bottom: 2px solid goldenrod;
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+.hero-text h2{
+    color:white;
+    font-size: var(--head);
+}
+
+.hero-text{
+    color:white;
+    height:90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.hero-text a{
+    color: black;
+    font-size:1rem;
+    background-color:white;
+    font-weight:700;
+    padding:0.8rem 1rem;
+    margin: 0.5rem,auto;
+    display:block;
+    transition: 250ms linear;
+
+}
+
+.hero-text a:hover{
+    background-color: black;
+    color:white;
+}
